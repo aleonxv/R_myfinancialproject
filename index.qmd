@@ -1,5 +1,5 @@
 ---
-title: "quartoCourseBlog"
+title: "Dominican University"
 listing:
   contents: posts
   sort: "date desc"
@@ -11,3 +11,5 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+Welcome! Please have a look at the data analysis that I have compiled.

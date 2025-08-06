@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 image: profile.jpg
 about:
   template: jolla
@@ -17,6 +17,19 @@ about:
 
 The content on this page is from `about.qmd`. Edit that file to change how this page looks.
 
-"About" pages are special quarto template pages, with multiple options: <https://quarto.org/docs/websites/website-about.html>.
+This is just normal text.\
+\
+This is my website.\
 
-Try changing the template type from `jolla` to one of the other options for a different look and feel.
+-   I can also add some bullet points too
+
+-   [Google](https://google.com)
+
+# Wartortle
+
+```{r}
+#| echo: false
+4*5
+library(ggplot2)
+ggplot(mpg, aes(x=hwy, y=cyl))+geom_point()
+```

@@ -5,11 +5,16 @@ date: "2025-08-06"
 categories: [goals,general]
 ---
 
-# Financial Investment Per Capita by State 
+# Financial Investment Per Capita by State
 
-1.  One
-2.  Two
-3.  Three
+I decided to take a look at financial data across several years throughout the US, there are conclusions that I draw based on some metrics that I would like to focus on. To do so, I began to look at some important questions to figure out how spending per capita is reflected in some of the other variables.\
+\
+The questions are as follows:
+
+-   **How does spending per capita on education affect the amount that a state will spend on policing?**
+
+-   \
+    \
 
 And make headers
 

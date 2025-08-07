@@ -7,7 +7,7 @@ categories: [finance,data analysis]
 
 # Financial Investment by State
 
-I decided to take a look at financial data across several years throughout the US, there are conclusions that I draw based on some metrics that I would like to focus on. To do so, I began to look at some important questions to figure out how spending per capita is reflected in some of the other variables. I also took a look at how trends in spending across some states have changed over the years and highlighted notable information or trends that take place. \
+I decided to take a look at financial data across several years throughout the US, there are conclusions that I draw based on some metrics that I would like to focus on. To do so, I began to look at some important questions to figure out how spending per capita is reflected in some of the other variables. I also took a look at how trends in spending across some states have changed over the years and highlighted notable information or trends that take place.\
 \
 The questions are as follows:
 
@@ -19,7 +19,7 @@ The questions are as follows:
 
 Based on the data, I believe that spending per capita on education will likely see a decrease in the amount that is needed to be spent on policing. I also believe that there will be a trend where the plot points become
 
-I believe that based on the information on the data set, I think that it will be likely to see that there will be a sharp increase in education after about the year 2000, I also think that there will be a steady increase across all expenditure not because there is necessarily a lot more spending but because as everything gradually becomes slightly more expensive this trend will follow. \
+I believe that based on the information on the data set, I think that it will be likely to see that there will be a sharp increase in education after about the year 2000, I also think that there will be a steady increase across all expenditure not because there is necessarily a lot more spending but because as everything gradually becomes slightly more expensive this trend will follow.\
 \
 
 # Approach:
@@ -29,7 +29,7 @@ For this data analysis, I have gathered information using two separate databases
 ## Education and Police Spending
 
 ```{r}
-#| echo: false
+#| echo: true
 # Load the necessary libraries for data manipulation and visualization
 # Suppress the package startup messages from tidyverse
 suppressPackageStartupMessages(library(tidyverse))
@@ -73,14 +73,18 @@ combined_df <- combined_df %>%
     per_capita_policing_spending = per_capita_equation(`Details.Police.protection`, population)
   )
 
+
+combined_df$year_factor <- "1990s"
+combined_df[combined_df$year > 1999, ]$year_factor <- "2000s"
+
 # Create a scatter plot to compare per capita spending on education and policing
 # Use capture.output to suppress any messages or warnings
 capture.output({
   suppressMessages(
     suppressWarnings(
-      ggplot(combined_df, aes(x = per_capita_education_spending, y = per_capita_policing_spending)) +
+      ggplot(combined_df, aes(x = per_capita_education_spending, y = per_capita_policing_spending, color = year_factor)) +
         geom_point(alpha = 0.6) +
-        geom_smooth(method = "lm", se = FALSE, color = "blue") +
+        geom_smooth(method = "lm", se = FALSE) +
         labs(
           title = "Per Capita Spending: Education vs. Policing",
           subtitle = "The blue line represents the linear trend (line of best fit).",
@@ -98,7 +102,7 @@ Overall based on the data, policing expenditure goes down with a few outliers an
 # Financial Expenditure Trends
 
 ```{r}
-#| echo: false
+#| echo: true
 # Load the necessary libraries for data manipulation and visualization.
 # The suppressPackageStartupMessages function ensures no package-related messages are shown.
 suppressPackageStartupMessages(library(tidyverse))

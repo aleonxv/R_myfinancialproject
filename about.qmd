@@ -12,4 +12,4 @@ about:
       href: https://github.com
 ---
 
-My name is Angel, I am currently a finance major and senior at Dominican University, this is my first R project after taking a one week crash course led by Dr. Robert Jageman. Throughout this workshop I have learned valuable insight into R basics and how to use different commands in R to interpret data according to its respective data set. I have learned a lot about how data can be used or displayed to teach something meaningful across various data and it changed my perspective on how we continuously use data to find new information across different sectors. \
+My name is Angel, I am currently a finance major and senior at Dominican University, this is my first R project after taking a one week crash course led by Dr. Robert Jageman. Throughout this workshop I have learned valuable insight into R basics and how to use different commands in R to interpret data according to its respective data set. I have learned a lot about how data can be used or displayed to teach something meaningful across various data and it changed my perspective on how we continuously use data to find new information across different sectors.\

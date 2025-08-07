@@ -1,35 +1,15 @@
 ---
 title: "About Me"
-image: profile.jpg
+image: Jonesy.jpg
 about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    template: jolla
+    links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: www.linkedin.com/in/angel-leon-25124720a
     - icon: github
       text: Github
       href: https://github.com
 ---
 
-The content on this page is from `about.qmd`. Edit that file to change how this page looks.
-
-This is just normal text.\
-\
-This is my website.\
-
--   I can also add some bullet points too
-
--   [Google](https://google.com)
-
-# Wartortle
-
-```{r}
-#| echo: false
-4*5
-library(ggplot2)
-ggplot(mpg, aes(x=hwy, y=cyl))+geom_point()
-```
+My name is Angel, I am currently a finance major and senior at Dominican University, this is my first R project after taking a one week crash course led by Dr. Robert Jageman. Throughout this workshop I have learned valuable insight into R basics and how to use different commands in R to interpret data according to its respective data set. I have learned a lot about how data can be used or displayed to teach something meaningful across various data and it changed my perspective on how we continuously use data to find new information across different sectors. \

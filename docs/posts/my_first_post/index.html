@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Angel Leon">
-<meta name="dcterms.date" content="2025-08-06">
+<meta name="dcterms.date" content="2025-08-07">
 
-<title>Analyzing State Financial Data – Angel</title>
+<title>Following the Money: Uncovering Financial Insights from U.S. State Budgets – Angel Leon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Angel</span>
+    <span class="navbar-title">Angel Leon</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -96,12 +96,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/CrumpLab/quartoCourseBlog"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/aleonxv/R_myfinancialproject"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/MattCrumpLab"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/angel-leon-25124720a/"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -116,10 +116,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Analyzing State Financial Data</h1>
+      <h1 class="title">Following the Money: Uncovering Financial Insights from U.S. State Budgets</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">goals</div>
-                <div class="quarto-category">general</div>
+                <div class="quarto-category">finance</div>
+                <div class="quarto-category">data analysis</div>
               </div>
                   </div>
   </div>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 6, 2025</p>
+        <p class="date">August 7, 2025</p>
       </div>
     </div>
     
@@ -158,21 +158,67 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="financial-investment-per-capita-by-state" class="level1">
 <h1>Financial Investment Per Capita by State</h1>
-<ol type="1">
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ol>
-<p>And make headers</p>
-<section id="this-is-a-second-level-heading" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-second-level-heading">This is a second level heading</h2>
-<p>You can include images, and many other kinds of content.</p>
-<p>If you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:</p>
-<p><img src="Feathers McGraw.png" class="img-fluid"></p>
-<p>The first image in a blog post will also be used on the listings page.</p>
-
-
+<p>I decided to take a look at financial data across several years throughout the US, there are conclusions that I draw based on some metrics that I would like to focus on. To do so, I began to look at some important questions to figure out how spending per capita is reflected in some of the other variables.<br>
+<br>
+The questions are as follows:</p>
+<ul>
+<li><p><strong>How does spending per capita on education affect the amount that a state will spend on policing?</strong></p></li>
+<li><p><strong>How do total expenditures on different sectors change in relation to a state’s total revenue over time?</strong><br>
+</p></li>
+</ul>
+<section id="predictions" class="level2">
+<h2 class="anchored" data-anchor-id="predictions">Predictions:</h2>
+<p>Based on the data, I believe that spending per capita on education will likely see a decrease in the amount that is needed to be spent on policing. I also believe that there will be a trend where the plot points become</p>
+<p>I believe that based on the information on the data set, I think that it will be likely to see that there will be a sharp increase in education after about the year 2000, I also think that there will be a steady increase across all expenditure not because there is necessarily a lot more spending but because as everything gradually becomes slightly more expensive this trend will follow.<br>
+<br>
+</p>
 </section>
+</section>
+<section id="approach" class="level1">
+<h1>Approach:</h1>
+<p>For this data analysis, I have gathered information using two separate databases, one is a financial database from the CORGIS Dataset Project which derives its data from The Annual Survey of Government Finances. The second database is from GitHub user “jakevdp” that compiled data from the US Census Bureau and Wikipedia. The first data set ranges from 1992-2019 across all states, includes 30 columns and 1052 rows including information about expenditures across education, policing, correction, and health care. The second data set is 4 columns and 2545 rows and includes information about the state population via census as well as information about the population that is under 18.</p>
+<section id="education-and-police-spending" class="level2">
+<h2 class="anchored" data-anchor-id="education-and-police-spending">Education and Police Spending</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>character(0)</code></pre>
+</div>
+</div>
+<p>Overall based on the data, policing expenditure goes down with a few outliers and while it is scattered around the lower end of spending there is a drop off in the expenditure right around the $3 mark. What this says is that when a state invest more money into education per person, it is more likely that they will spend less money on policing. While this does not tell the entire story, it is reasonable to conclude that education can have an impact on the amount of policing that a state will need.</p>
+</section>
+</section>
+<section id="financial-expenditure-trends" class="level1">
+<h1>Financial Expenditure Trends</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -2,30 +2,37 @@
   {
     "objectID": "posts/my_first_post/index.html",
     "href": "posts/my_first_post/index.html",
-    "title": "Analyzing State Financial Data",
+    "title": "Following the Money: Uncovering Financial Insights from U.S. State Budgets",
     "section": "",
-    "text": "One\nTwo\nThree\n\nAnd make headers\n\n\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
+    "text": "I decided to take a look at financial data across several years throughout the US, there are conclusions that I draw based on some metrics that I would like to focus on. To do so, I began to look at some important questions to figure out how spending per capita is reflected in some of the other variables.\n\nThe questions are as follows:\n\nHow does spending per capita on education affect the amount that a state will spend on policing?\nHow do total expenditures on different sectors change in relation to a state’s total revenue over time?\n\n\n\n\nBased on the data, I believe that spending per capita on education will likely see a decrease in the amount that is needed to be spent on policing. I also believe that there will be a trend where the plot points become\nI believe that based on the information on the data set, I think that it will be likely to see that there will be a sharp increase in education after about the year 2000, I also think that there will be a steady increase across all expenditure not because there is necessarily a lot more spending but because as everything gradually becomes slightly more expensive this trend will follow."
   },
   {
-    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "Analyzing State Financial Data",
+    "objectID": "posts/my_first_post/index.html#predictions",
+    "href": "posts/my_first_post/index.html#predictions",
+    "title": "Following the Money: Uncovering Financial Insights from U.S. State Budgets",
     "section": "",
-    "text": "You can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
+    "text": "Based on the data, I believe that spending per capita on education will likely see a decrease in the amount that is needed to be spent on policing. I also believe that there will be a trend where the plot points become\nI believe that based on the information on the data set, I think that it will be likely to see that there will be a sharp increase in education after about the year 2000, I also think that there will be a steady increase across all expenditure not because there is necessarily a lot more spending but because as everything gradually becomes slightly more expensive this trend will follow."
+  },
+  {
+    "objectID": "posts/my_first_post/index.html#education-and-police-spending",
+    "href": "posts/my_first_post/index.html#education-and-police-spending",
+    "title": "Following the Money: Uncovering Financial Insights from U.S. State Budgets",
+    "section": "Education and Police Spending",
+    "text": "Education and Police Spending\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\ncharacter(0)\n\n\nOverall based on the data, policing expenditure goes down with a few outliers and while it is scattered around the lower end of spending there is a drop off in the expenditure right around the $3 mark. What this says is that when a state invest more money into education per person, it is more likely that they will spend less money on policing. While this does not tell the entire story, it is reasonable to conclude that education can have an impact on the amount of policing that a state will need."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "The content on this page is from about.qmd. Edit that file to change how this page looks.\nThis is just normal text.\n\nThis is my website.\n\n\nI can also add some bullet points too\nGoogle\n\n\nWartortle\n\n\n[1] 20"
+    "text": "My name is Angel, I am currently a finance major and senior at Dominican University, this is my first R project after taking a one week crash course led by Dr. Robert Jageman. Throughout this workshop I have learned valuable insight into R basics and how to use different commands in R to interpret data according to its respective data set. I have learned a lot about how data can be used or displayed to teach something meaningful across various data and it changed my perspective on how we continuously use data to find new information across different sectors."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Dominican University",
     "section": "",
-    "text": "Welcome! Please have a look at the data analysis that I have compiled.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalyzing State Financial Data\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nAngel Leon\n\n\n\n\n\nNo matching items"
+    "text": "Welcome! Please have a look at the data analysis that I have compiled.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFollowing the Money: Uncovering Financial Insights from U.S. State Budgets\n\n\n\nfinance\n\ndata analysis\n\n\n\n\n\n\n\n\n\nAug 7, 2025\n\n\nAngel Leon\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "readme.html",
